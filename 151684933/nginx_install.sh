@@ -366,7 +366,6 @@ install_nginx(){
     echo -e "${blue}Enjoy to use nginx${plain}"
     echo
     install_nginx 2>&1 | tee "${cur_dir}"/install_nginx.log
-    exit 0
 }
 
 uninstall_nginx(){
@@ -453,4 +452,4 @@ case "${action_select}" in
     ;;
 esac
 done
-
+exit
